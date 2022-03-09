@@ -1,5 +1,5 @@
 <title>KITTEN!</title>
-<img onclick="quizCalc(); return false;" src="https://thecatapi.com/api/images/get?format=src&type=gif" onclick="this.src='https://thecatapi.com/api/images/get?format=src&type=gif'"
+<img id="toggleImage" onclick="toggleImage();" src="https://thecatapi.com/api/images/get?format=src&type=gif"
      width="500" 
      height="600" />
 
@@ -15,12 +15,12 @@
 </style>
 
 <script>
-document.onkeydown = function KeyDown(e)
-{
-  var keyCode = document.all ? event.keyCode : e.which;
+function toggleImage() {
+   var img1 = "https://thecatapi.com/api/images/get?format=src&type=gif";
+   var img2 = "https://thecatapi.com/api/images/get?format=src&type=gif";
+   
+   var imgElement = document.getElementById('toggleImage');
 
-  if(keyCode == 13) {
-    quizCalc(); 
-    return false;
-  }
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
 </script>
