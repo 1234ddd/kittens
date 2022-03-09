@@ -1,9 +1,7 @@
 <title>KITTEN!</title>
-<p>
-<img id="imgClickAndChange" onclick="changeImage()" src="https://thecatapi.com/api/images/get?format=src&type=gif"
+<img src="path" onclick="this.src='https://thecatapi.com/api/images/get?format=src&type=gif'">
      width="500" 
      height="600" />
-</p>
 
 <style>
  img {
@@ -15,16 +13,3 @@
   height: 100%;
 }
 </style>
-
-<script language="javascript">
-     
-    function changeImage() {
-        if (document.getElementById("imgClickAndChange").src == "https://thecatapi.com/api/images/get?format=src&type=gif");
-        {
-            document.getElementById("imgClickAndChange").src = "https://thecatapi.com/api/images/get?format=src&type=gif";
-        }
-        else 
-        {
-            document.getElementById("imgClickAndChange").src = "https://thecatapi.com/api/images/get?format=src&type=gif";
-        }
-</script>
